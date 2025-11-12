@@ -4,7 +4,7 @@ import networkx as nx
 def CriarMontarGrafo(datasetEscolhido):
     grafo = nx.Graph()
 
-    dados = pd.read_csv("../datasets_coloring/" + datasetEscolhido)
+    dados = pd.read_csv("./datasets_coloring/" + datasetEscolhido)
 
     for i, linha in dados.iterrows():
         disciplina1 = linha["Disciplina1"]
